@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>图片 / 视频标题</title>
+  <meta name="description" content="一句话描述。">
+  <meta property="og:title" content="图片 / 视频标题">
+  <meta property="og:description" content="一句话描述。">
+  <link rel="stylesheet" href="../../assets/share.css">
+  <script src="../../assets/share.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <header class="meta">
+      <h1>图片 / 视频标题</h1>
+      <p><time datetime="2026-11-04">2026-11-04</time> · <span class="tag">media</span></p>
+      <p class="lede">一句话描述。素材文件和本页放在同一目录，用相对路径引用。</p>
+    </header>
+
+    <figure class="wide">
+      <img src="https://picsum.photos/seed/share-hero/1200/700" alt="主图描述" loading="lazy">
+      <figcaption>主图说明（.wide 可超出正文宽度）</figcaption>
+    </figure>
+
+    <div class="grid">
+      <figure><img src="https://picsum.photos/seed/share-1/800/600" alt="图 1" loading="lazy"><figcaption>图 1</figcaption></figure>
+      <figure><img src="https://picsum.photos/seed/share-2/800/600" alt="图 2" loading="lazy"><figcaption>图 2</figcaption></figure>
+      <figure><img src="https://picsum.photos/seed/share-3/800/600" alt="图 3" loading="lazy"><figcaption>图 3</figcaption></figure>
+    </div>
+
+    <figure>
+      <video controls preload="metadata" playsinline src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"></video>
+      <figcaption>本地视频：&lt;video src="./demo.mp4"&gt;（单文件 &lt; 50MB）</figcaption>
+    </figure>
+
+    <!-- 外部视频（YouTube / Bilibili）用 iframe，样式已自动 16:9：
+    <figure>
+      <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="视频标题" allowfullscreen loading="lazy"></iframe>
+      <figcaption>说明</figcaption>
+    </figure>
+    -->
+
+    <footer>yuler · shared via <a href="https://github.com/yuler/share">yuler/share</a></footer>
+  </main>
+</body>
+</html>

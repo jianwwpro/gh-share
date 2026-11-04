@@ -1,0 +1,8 @@
+# Binaries
+gh-share
+dist/
+
+# Editor & OS
+.DS_Store
+*.swp
+*.exe

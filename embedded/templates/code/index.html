@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>代码片段标题</title>
+  <meta name="description" content="这段代码做什么。">
+  <meta property="og:title" content="代码片段标题">
+  <meta property="og:description" content="这段代码做什么。">
+  <link rel="stylesheet" href="../../assets/share.css">
+  <script src="../../assets/share.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <header class="meta">
+      <h1>代码片段标题</h1>
+      <p><time datetime="2026-11-04">2026-11-04</time> · <span class="tag">code</span> <span class="tag">typescript</span></p>
+      <p class="lede">这段代码解决什么问题，怎么用。</p>
+    </header>
+
+    <pre data-title="debounce.ts"><code class="language-typescript">export function debounce&lt;T extends (...args: any[]) =&gt; void&gt;(fn: T, ms = 200) {
+  let timer: ReturnType&lt;typeof setTimeout&gt; | undefined;
+  return (...args: Parameters&lt;T&gt;) =&gt; {
+    clearTimeout(timer);
+    timer = setTimeout(() =&gt; fn(...args), ms);
+  };
+}</code></pre>
+
+    <h2>用法</h2>
+    <pre><code class="language-typescript">const onResize = debounce(() =&gt; console.log("resized"), 300);
+window.addEventListener("resize", onResize);</code></pre>
+
+    <h2>说明</h2>
+    <ul>
+      <li>代码里的 <code>&lt;</code> <code>&gt;</code> <code>&amp;</code> 必须转义。</li>
+      <li><code>class="language-xxx"</code> 触发语法高亮；<code>data-title</code> 显示文件名。</li>
+    </ul>
+
+    <footer>yuler · shared via <a href="https://github.com/yuler/share">yuler/share</a></footer>
+  </main>
+</body>
+</html>

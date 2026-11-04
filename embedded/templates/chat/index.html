@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>对话标题 — AI 对话记录</title>
+  <meta name="description" content="这段对话解决了什么问题。">
+  <meta property="og:title" content="对话标题 — AI 对话记录">
+  <meta property="og:description" content="这段对话解决了什么问题。">
+  <link rel="stylesheet" href="../../assets/share.css">
+  <script src="../../assets/share.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <header class="meta">
+      <h1>对话标题</h1>
+      <p><time datetime="2026-11-04">2026-11-04</time> · <span class="tag">chat</span> <span class="tag">Claude</span></p>
+      <p class="lede">一两句话总结：这段对话在做什么、结论是什么。</p>
+    </header>
+
+    <section class="chat">
+      <div class="msg" data-role="user">
+        <p>用户的问题。</p>
+      </div>
+
+      <div class="msg" data-role="assistant" data-name="Claude">
+        <p>助手的回答，可以包含任意 HTML：列表、代码块、图片。</p>
+        <pre><code class="language-bash">gh repo create yuler/share --public</code></pre>
+      </div>
+
+      <details class="msg" data-role="tool">
+        <summary>run_command — 工具调用（默认折叠）</summary>
+        <pre><code>$ ls
+assets  templates</code></pre>
+      </details>
+
+      <div class="msg" data-role="assistant" data-name="Claude">
+        <p>最终结论。</p>
+      </div>
+    </section>
+
+    <footer>yuler · shared via <a href="https://github.com/yuler/share">yuler/share</a></footer>
+  </main>
+</body>
+</html>
